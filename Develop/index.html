@@ -30,7 +30,7 @@
     </header>
     <div class="container-fluid d-flex justify-content-center">
       <!-- Timeblocks go here -->
-      <table class="table table-dark table-striped table-hover col-10">
+      <table id="calendar" class="table table-dark table-striped table-hover col-10">
         <thead>
           <tr class="d-flex">
             <th scope="col" class="col-1 text-center">Time</th>
@@ -39,56 +39,76 @@
           </tr>
           
         </thead>
-        <tbody>
+        <tbody class="text-center">
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">07:00</th>
-            <td id="event7" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">07:00</th>
+            <td id="event7" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">08:00</th>
-            <td id="event8" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">08:00</th>
+            <td id="event8" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">09:00</th>
-            <td id="event9" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">09:00</th>
+            <td id="event9" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">10:00</th>
-            <td id="event10" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">10:00</th>
+            <td id="event10" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">11:00</th>
-            <td id="event11" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">11:00</th>
+            <td id="event11" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">12:00</th>
-            <td id="event12" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">12:00</th>
+            <td id="event12" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">13:00</th>
-            <td id="event13" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">13:00</th>
+            <td id="event13" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">14:00</th>
-            <td id="event14" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">14:00</th>
+            <td id="event14" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">15:00</th>
-            <td id="event15" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">15:00</th>
+            <td id="event15" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
           <tr class="d-flex border border-info event">
-            <th scope="row" class="col-1 text-center">16:00</th>
-            <td id="event16" class="col-10 text-center">This is an example event</td>
-            <td class="col-1 text-center"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
+            <th scope="row" class="col-1">16:00</th>
+            <td id="event16" class="col-10">
+              <span><input class="table-input form-control input-sm text-light"></span>
+            </td>
+            <td class="col-1"><button id="save9" type="button" class="btn btn-info btn-square"><span class="fas fa-save"></span></button></td>
           </tr>
         </tbody>
       </table>

@@ -10,10 +10,17 @@ var myTimer = setInterval(function(){
 for (var i = 0; i < events.length; i++){
     if(time == events[i].children[0].textContent.substring(0,2)){
         events[i].children[1].classList.add("bg-success");
+        events[i].children[1].children[0].children[0].classList.add("bg-success")
+        events[i].children[1].children[0].children[0].classList.add("border-success")
     }else if (time > events[i].children[0].textContent.substring(0,2)){
         events[i].children[1].classList.add("bg-secondary");
+        events[i].children[1].children[0].children[0].classList.add("bg-secondary")
+        events[i].children[1].children[0].children[0].classList.add("border-secondary")
     }else{
         events[i].children[1].classList.add("bg-primary");
+        events[i].children[1].children[0].children[0].classList.add("bg-primary")
+        events[i].children[1].children[0].children[0].classList.add("border-primary")
     }
 }
 
+$()
