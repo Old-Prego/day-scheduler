@@ -1,5 +1,19 @@
 var time = moment().format("HH");;
 var events = document.getElementsByClassName("event");
+var buttons = document.getElementsByClassName("btn");
+
+var schedule = {
+    event07: "",
+    event08: "",
+    event09: "",
+    event10: "",
+    event11: "",
+    event12: "",
+    event13: "",
+    event14: "",
+    event15: "",
+    event16: ""
+}
 
 var myTimer = setInterval(function(){
     var CurrentDate = moment().format("MMM DD, YYYY h:m:ss a");;
@@ -23,4 +37,33 @@ for (var i = 0; i < events.length; i++){
     }
 }
 
-$()
+function saveEvent(button){
+    var id = "#event" + button.substring(4,6);
+    var storedSchedule = JSON.parse(localStorage.getItem("schedule"));
+    if(storedSchedule !== null){
+        schedule = storedSchedule;
+    }
+    var objID = id.substring(1,8);
+    schedule[objID] = $(id).val();
+    localStorage.setItem("schedule",JSON.stringify(schedule));
+}
+
+// buttons.addEventListener("click",saveEvent)
+
+for(var i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener("click", function(){saveEvent(this.id)});
+}
+
+
+var storedSchedule = JSON.parse(localStorage.getItem("schedule"));
+if(storedSchedule !== null){
+    schedule = storedSchedule;
+    var eventNames = Object.keys(schedule);
+    
+    // for (var event in schedule){
+    //     console.log(`${event}: ${schedule[event]}`);
+    //     var eventNames = Object.keys(schedule);
+        
+    // }
+}
+
