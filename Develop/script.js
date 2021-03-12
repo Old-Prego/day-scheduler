@@ -16,7 +16,7 @@ var schedule = {
 }
 
 var myTimer = setInterval(function(){
-    var CurrentDate = moment().format("MMM DD, YYYY h:m:ss a");;
+    var CurrentDate = moment().format("MMM DD, YYYY HH:m:ss");;
     $("#currentDay").text(CurrentDate);
     time 
 },1000);
@@ -59,11 +59,11 @@ var storedSchedule = JSON.parse(localStorage.getItem("schedule"));
 if(storedSchedule !== null){
     schedule = storedSchedule;
     var eventNames = Object.keys(schedule);
-    
-    // for (var event in schedule){
-    //     console.log(`${event}: ${schedule[event]}`);
-    //     var eventNames = Object.keys(schedule);
-        
-    // }
+    for (var i = 0; i < eventNames.length; i++){
+        var id = eventNames[i];
+        var eventText = schedule[id];
+        id = "#" + id;
+        $(id).val(eventText);
+    }
 }
 
