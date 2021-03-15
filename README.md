@@ -1,4 +1,4 @@
-#Work Day Scheduler
+# Work Day Scheduler
 
 This project was to build a day scheduler that was editable and would save your information even if you left the page.
 
