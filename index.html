@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,7 +29,7 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container-fluid d-flex justify-content-center">
-      <!-- Timeblocks go here -->
+      <!-- General table syling gives it the dark alternating look and the nice hover changes -->
       <table id="calendar" class="table table-dark table-striped table-hover col-10">
         <thead>
           <tr class="d-flex">
@@ -41,6 +41,10 @@
         </thead>
         <tbody class="text-center">
 
+          <!-- Each table row has exactly the same styling to start out with -->
+          <!-- The second column of each row has a span with an input, making it editable while still keeping the background and no distinct border -->
+          <!-- The third column uses a save button icon from the font awesome icon pack that is placed inside a button -->
+          <!-- The input and button are both using ID's that are easy to loop through for variable purposes in the javascript -->
           <tr class="d-flex border border-info event">
             <th scope="row" class="col-1">07:00</th>
             <td class="col-10">
@@ -127,6 +131,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src ="script.js"></script>
+    <script src ="./assets/script.js"></script>
   </body>
 </html>
